@@ -6,6 +6,10 @@
 
     <style>
 
+        body{
+            background-color: black;
+        }
+
         section>div:nth-child(1){
             width: 100px;
             height: 50px;
@@ -92,8 +96,8 @@
             bottom: 0;
             position: absolute;
             margin: auto;
-           border-top: black 2px solid;
-           border-bottom: black 2px solid;
+           border-top: white 2px solid;
+           border-bottom: white 2px solid;
         }
 
 
@@ -107,13 +111,43 @@
 
 
 <section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div id="blue"></div>
+    <div id="yellow"></div>
+    <div id="cream"></div>
+    <div id="pink"></div>
+    <div id="red"></div>
+    <div id="green"></div>
 </section>
 
+<script>
+
+    let color = ["dodgerblue", "yellow", "lightpink", "hotpink", "red", "forestgreen"];
+    setInterval(() => {
+
+
+
+        let last = color.pop();
+        color.unshift(last);
+
+
+
+        document.getElementById("blue").style.backgroundColor = color[0];
+        document.getElementById("yellow").style.backgroundColor = color[1];
+        document.getElementById("cream").style.backgroundColor = color[2];
+        document.getElementById("pink").style.backgroundColor = color[3];
+        document.getElementById("red").style.backgroundColor = color[4];
+        document.getElementById("green").style.backgroundColor = color[5];
+
+
+        console.log(
+            color
+        )
+
+    },1000);
+
+
+</script>
+
+<script src="que01.js"></script>
 </body>
 </html>
