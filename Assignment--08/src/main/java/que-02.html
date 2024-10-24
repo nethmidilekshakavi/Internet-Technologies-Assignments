@@ -2,102 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Calculator</title>
+    <title>Que02</title>
 
-    <style>
+  <style>
 
+      #house{
 
-        .calculator{
-            padding: 20px;
-            border-radius: 10px;
-            display:flex ;
-            align-content: center;
-            justify-content: center;
-        }
+          height: 200px;
+          width: 200px;
+          top: 30%;
+          right: 10%;
+          position: absolute;
+      }
 
-        .calculator form input{
-            border: 0;
-            outline: 0;
-            width: 60px;
-            height: 60px;
-            border-radius: 10px;
-            box-shadow: 10px 10px 10px 10px black;
-            background: transparent;
-            font-size: 20px;
-            cursor: pointer;
-            margin: 10px;
-        }
+      #go1{
+          height: 100px;
+          width: 100px;
+          top: 40%;
+          left: 5%;
+          position: absolute;
+      }
 
-        form .display{
-            border: black 1px solid;
-            box-shadow: black 10px 10px 10px;
-            display: flex;
-            justify-content: flex-end;
-            margin: 20px 0;
-        }
+      #go2{
+          height: 100px;
+          width: 100px;
+          top: 40%;
+          left: 15%;
+          position: absolute;
+      }
 
-        form .display input{
-            text-align: right;
-            flex: 1;
-            border: black 1px solid;
-            color: black;
-            font-size: 45px;
-            box-shadow: none;
-        }
+      #b{
+          height: 100px;
+          width: 100px;
+          top: 30%;
+          left: 15%;
+          position: absolute;
+      }
 
-        form input.equal{
-            width:145px ;
-        }
+      #go3{
+          height: 100px;
+          width: 100px;
+          top: 40%;
+          left: 25%;
+          position: absolute;
+      }
 
-        .operator{
-            color: orangered;
-            font-weight: bold;
-        }
+      #c{
+          height: 100px;
+          width: 100px;
+          top: 30%;
+          left: 25%;
+          position: absolute;
+      }
 
-    </style>
+      #go4{
+          height: 100px;
+          width: 100px;
+          top: 40%;
+          left: 35%;
+          position: absolute;
+      }
+      #d{
+          height: 100px;
+          width: 100px;
+          top: 30%;
+          left: 35%;
+          position: absolute;
+      }
+      #go5{
+          height: 100px;
+          width: 100px;
+          top: 40%;
+          left: 45%;
+          position: absolute;
+      }
+      #e{
+          height: 100px;
+          width: 100px;
+          top: 30%;
+          left: 45%;
+          position: absolute;
+      }
+      #go6{
+          height: 100px;
+          width: 100px;
+          top: 40%;
+          left: 55%;
+          position: absolute;
+      }
+      #f{
+          height: 100px;
+          width: 100px;
+          top: 30%;
+          left: 55%;
+          position: absolute;
+      }
+
+      .letter{
+          font-size: 40px;
+          color: red;
+          font-weight: bolder;
+      }
+
+      #a{
+          height: 100px;
+          width: 100px;
+          top: 30%;
+          left: 5%;
+          position: absolute;
+      }
+  </style>
+
 
 </head>
 <body>
 
-<div class="container">
-    <div class="calculator">
-        <form>
-            <div class="display">
+<img src="Assert/icons8-house.gif" alt="" id="house">
+<img src="Assert/icons8-go%20(1).gif" alt="" id="go1">
+<img src="Assert/icons8-go%20(1).gif" alt="" id="go2">
+<img src="Assert/icons8-go%20(1).gif" alt="" id="go3">
+<img src="Assert/icons8-go%20(1).gif" alt="" id="go4">
+<img src="Assert/icons8-go%20(1).gif" alt="" id="go5">
+<img src="Assert/icons8-go%20(1).gif" alt="" id="go6">
 
-                <input type="text" name="display">
-            </div>
-            <div>
-                <input type="button" value="AC" onclick="display.value  = '' " class="operator">
-                <input type="button" value="DE" onclick="display.value  = display.value.toString().slice(0,-1)" class="operator">
-                <input type="button" value="." onclick="display.value  += '.' " class="operator">
-                <input type="button" value="/" onclick="display.value  += '/' " class="operator" >
-            </div>
-            <div>
-                <input type="button" value="7" onclick="display.value  += '7' "  >
-                <input type="button" value="8" onclick="display.value  += '8' " >
-                <input type="button" value="9" onclick="display.value  += '9' " >
-                <input type="button" value="*" onclick="display.value  += '*' " class="operator">
-            </div>
-            <div>
-                <input type="button" value="4" onclick="display.value  += '4' " >
-                <input type="button" value="5" onclick="display.value  += '5' " >
-                <input type="button" value="6" onclick="display.value  += '6' " >
-                <input type="button" value="-" onclick="display.value  += '-' " class="operator">
-            </div>
-            <div>
-                <input type="button" value="1" onclick="display.value  += '1' " >
-                <input type="button" value="2" onclick="display.value  += '2' " >
-                <input type="button" value="3" onclick="display.value  += '3' " >
-                <input type="button" value="+" onclick="display.value  += '+' " class="operator" >
-            </div>
-            <div>
-                <input type="button" value="00" onclick="display.value  += '00' " >
-                <input type="button" value="0" onclick="display.value  += '0' " >
-                <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal" >
-            </div>
-        </form>
-    </div>
-</div>
+<div class="letter" id="a">A</div>
+<div class="letter" id="b">B</div>
+<div class="letter" id="c">C</div>
+<div class="letter" id="d">D</div>
+<div class="letter" id="e">E</div>
+<div class="letter" id="f">F</div>
+
+
 
 </body>
+
+<script>
+
+    let letter = ["A", "B", "C", "D", "E", "F"];
+
+    setInterval(() => {
+
+        let last = letter.pop();
+        letter.unshift(last);
+
+
+        document.getElementById("a").innerText = letter[0];
+        document.getElementById("b").innerText = letter[1];
+        document.getElementById("c").innerText = letter[2];
+        document.getElementById("d").innerText = letter[3];
+        document.getElementById("e").innerText = letter[4];
+        document.getElementById("f").innerText = letter[5];
+
+        console.log(letter);
+    }, 1000);
+</script>
+
 </html>
